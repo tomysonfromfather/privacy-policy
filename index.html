@@ -1,0 +1,69 @@
+사실 구글 플레이 스토어 심사 통과만을 목적으로 한다면 영어만 있어도 큰 문제는 없습니다. 전 세계 검수 가이드라인이 영어 기준이기 때문이죠.
+
+다만, 한국 사용자가 앱을 설치해서 사용한다면 국내 법적 권고 사항이나 사용자 편의를 고려해 영문과 국문을 함께 두는 것이 가장 베스트입니다. (심사관이 한국인일 경우에도 훨씬 깔끔해 보이고요.)
+
+만약 "복잡한 건 싫고, 딱 깔끔하게 영어로만 가겠다!" 하신다면, 아까 웹사이트에서 보신 원문 내용을 HTML 형식에 맞춰 영문 전용으로 정리해 드릴게요. 이 버전이 해외 출시나 구글 심사에는 가장 '표준적'인 느낌을 줍니다.
+
+🇺🇸 영문 전용 개인정보처리방침 (index.html용)
+아래 코드를 복사해서 index.html에 붙여넣으세요. (이메일 주소만 수정하시면 됩니다.)
+
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - imageScan</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; color: #333; }
+        h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
+        h2 { margin-top: 30px; color: #444; border-left: 4px solid #007bff; padding-left: 10px; }
+        h3 { color: #555; }
+        ul { padding-left: 20px; }
+        .contact-box { background: #f8f9fa; padding: 15px; border-radius: 5px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Privacy Policy</h1>
+    <p>Last updated: March 15, 2026</p>
+
+    <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+
+    <h2>1. Types of Data Collected</h2>
+    <h3>Personal Data</h3>
+    <ul>
+        <li><strong>Email address:</strong> For user identification and support.</li>
+        <li><strong>Usage Data:</strong> Collected automatically (IP address, device type, OS version, app logs).</li>
+    </ul>
+
+    <h3>Information Collected while Using the Application</h3>
+    <p>To provide image summarization features, we may collect with your prior permission:</p>
+    <ul>
+        <li><strong>Pictures and Camera access:</strong> Used solely to process and analyze the text/content you wish to summarize.</li>
+    </ul>
+
+    <h2>2. Use of Your Personal Data</h2>
+    <p>The Company may use Personal Data for the following purposes:</p>
+    <ul>
+        <li><strong>To provide and maintain our Service:</strong> Including the AI-powered "Just 3 Lines" summary.</li>
+        <li><strong>To manage Your requests:</strong> To attend to your feedback or technical issues.</li>
+        <li><strong>Third-party Processing:</strong> We use <strong>Google Gemini AI</strong> to analyze images. Data is transmitted to Google's servers for processing but is not stored by us permanently.</li>
+    </ul>
+
+    <h2>3. Retention and Deletion of Data</h2>
+    <p>We retain Usage Data for internal analysis and security purposes for up to 24 months. You may request deletion of your data at any time by contacting us.</p>
+
+    <h2>4. Children's Privacy</h2>
+    <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13.</p>
+
+    <h2>5. Contact Us</h2>
+    <div class="contact-box">
+        <p>If you have any questions about this Privacy Policy, You can contact us:</p>
+        <ul>
+            <li>By email: <strong>tomysonfromfather@gmail.com</strong></li>
+        </ul>
+    </div>
+
+</body>
+</html>
